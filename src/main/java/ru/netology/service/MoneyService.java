@@ -8,16 +8,16 @@ public class MoneyService {
     4.Решение отдохнуть ли в следующем месяце принимается по правилу: если на счету есть хотя бы threshold денег, то выбираем отдых, иначе - работу.
     5.Необходимо написать сервисный класс с методом, который по заданным income, expenses и threshold расчитает количество месяцев отдыха, которые будут в следующий год. Всё считается в целых числах.
      */
-    public int calculateMoneyMonths(int income, int expenses, int threshold ) {
+    public int calculateMoneyMonths(int income, int expenses, int threshold) {
         int count = 0; // счётчик месяцев отдыха
         int money = 0; // количество денег на счету
 
         for (int month = 0; month < 12; month++) {
             if (money >= threshold) { // можем ли отдыхать?
                 count++;
-                money = (money - expenses) /3;
+                money = (money - expenses) / 3;
             } else {
-                money = money + income-expenses;
+                money = money + income - expenses;
             }
         }
         return count;
