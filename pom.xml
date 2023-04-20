@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>ru.netology.service</groupId>
-    <artifactId>myproject6Vacation</artifactId>
+    <artifactId>VacationTest</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>

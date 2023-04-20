@@ -3,10 +3,10 @@ package ru.netology.service;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class MoneyServiceTest {
+public class VacationTest {
     @Test
     public void shouldCalculateMoneyMonths1() {
-        MoneyService service = new MoneyService();
+        VacationService service = new VacationService();
         int income = 10_000;
         int expenses = 3_000;
         int threshold = 20_000;
@@ -19,7 +19,7 @@ public class MoneyServiceTest {
 
     @Test
     public void shouldCalculateMoneyMonths2() {
-        MoneyService service = new MoneyService();
+        VacationService service = new VacationService();
         int income = 100_000;
         int expenses = 60_000;
         int threshold = 150_000;
